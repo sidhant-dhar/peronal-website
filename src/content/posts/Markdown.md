@@ -1,14 +1,11 @@
 ---
-title: Markdown Style Guide
-published: 2025-03-08
-updated: 2025-03-23
-tags: ["Guide"]
-pin: 1
-lang: en
-abbrlink: markdown-style-guide
+title: 'Using Markdown'
+published: 2025-03-11
+draft: true
+pin: 99
 ---
 
-Here are some basic Markdown syntax examples and their stylistic effects in Retypeset.
+Here are some basic Markdown syntax examples and their stylistic effects.
 
 ## Headings
 
@@ -108,7 +105,7 @@ To create a blockquote, add a `>` in front of a paragraph. To create a blockquot
 
 ## Tables
 
-To add a table, use three or more hyphens `---` to create each column’s header, and use pipes `|` to separate each column.
+To add a table, use three or more hyphens `---` to create each column's header, and use pipes `|` to separate each column.
 
 ### Syntax
 

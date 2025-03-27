@@ -3,7 +3,7 @@ title: Theme Guide
 published: 2025-01-26
 updated: 2025-03-12
 tags: ["Blog Theme","Guide"]
-pin: 99
+pin: 1
 lang: en
 abbrlink: theme-guide
 ---
