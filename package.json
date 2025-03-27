@@ -1,9 +1,9 @@
 {
-  "name": "astro-theme-retypeset",
+  "name": "sidhant-personal-website",
   "type": "module",
   "version": "0.0.1",
   "packageManager": "pnpm@10.6.4",
-  "repository": "https://github.com/radishzzz/astro-theme-retypeset",
+  "repository": "https://github.com/sidhant-dhar/peronal-website",
   "scripts": {
     "dev": "astro check && astro dev",
     "build": "astro check && astro build",
