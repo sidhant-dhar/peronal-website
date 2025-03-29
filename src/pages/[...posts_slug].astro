@@ -110,7 +110,7 @@ const { Content, remarkPluginFrontmatter } = await post.render()
       <!-- Go Back Button On Desktop -->
       <GoBack />
       <!-- Title -->
-      <h1 class="post-title">
+      <h1 class="post-title font-title">
         <span
           transition:name={`post-${post.data.abbrlink || post.slug}-${lang}`}
           data-disable-transition-on-theme
@@ -133,7 +133,9 @@ const { Content, remarkPluginFrontmatter } = await post.render()
       />
     </div>
     <!-- Content -->
-    <Content />
+    <div class="font-serif">
+      <Content />
+    </div>
   </article>
 
   <!-- Tags -->
@@ -143,7 +145,7 @@ const { Content, remarkPluginFrontmatter } = await post.render()
       {post.data.tags.map((tag: string) => (
         <a
           href={getTagPath(tag, lang)}
-          class="uno-tags-style"
+          class="uno-tags-style font-title"
         >
           {tag}
         </a>

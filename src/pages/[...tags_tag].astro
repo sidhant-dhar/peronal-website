@@ -60,7 +60,7 @@ const supportedLangs = tagSupportedLangs.filter(Boolean) as string[]
     {allTags.map(tagName => (
       <a
         href={getTagPath(tagName, lang)}
-        class={`uno-tags-style ${
+        class={`uno-tags-style font-title ${
           tag === tagName
             ? 'border-secondary/75 text-primary'
             : ''

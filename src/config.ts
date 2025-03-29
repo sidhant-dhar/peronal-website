@@ -1,5 +1,6 @@
 import type { ThemeConfig } from '@/types'
 
+
 export const themeConfig: ThemeConfig = {
   // SITE INFORMATION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> START
   site: {
@@ -20,6 +21,7 @@ export const themeConfig: ThemeConfig = {
     favicon: '/icon/favicon.ico',
 
   },
+
   // SITE INFORMATION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> END
 
   // COLOR SETTINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> START
@@ -138,18 +140,22 @@ export const themeConfig: ThemeConfig = {
       {
         name: 'GitHub',
         url: 'https://github.com/sidhant-dhar',
+        icon: 'i-mdi-github',
       },
       {
         name: 'Twitter',
         url: 'https://x.com/SidhantDhar1',
+        icon: 'i-mdi-twitter',
       },
       {
         name: 'Email',
         url: 'https://sidhantdhar@gmail.com',
+        icon: 'i-mdi-email',
       },
       {
         name: 'LinkedIn',
-        url: 'https://www.linkedin.com/in/sidhantdhar/'
+        url: 'https://www.linkedin.com/in/sidhantdhar/',
+        icon: 'i-mdi-linkedin',
       }
     ],
     // year of website start

@@ -1,4 +1,5 @@
 import type { Theme } from 'unocss/preset-uno'
+import type { Preset } from '@unocss/core'
 import {
   defineConfig,
   presetAttributify,
@@ -8,28 +9,40 @@ import {
 } from 'unocss'
 import presetTheme from 'unocss-preset-theme'
 import { themeConfig } from './src/config.ts'
+import presetIcons from '@unocss/preset-icons'
 
 const { light, dark } = themeConfig.color
+
+
+
+const preset: Preset<Theme> = presetTheme<Theme>({
+  theme: {
+    dark: {
+      colors: dark,
+    },
+  },
+})
 
 export default defineConfig({
   presets: [
     presetWind3(),
     presetAttributify(),
-    presetTheme<Theme>({
-      theme: {
-        dark: {
-          colors: dark,
-        },
+    preset,
+    presetIcons({
+      scale: 1.75,
+      cdn: 'https://esm.sh/',
+      collections: {
+        mdi: () => import('@iconify-json/mdi/icons.json').then((m) => m.default),
       },
     }),
   ],
   theme: {
     colors: light,
     fontFamily: {
-      title: ['Snell-Black', 'EarlySummer-Subset', 'EarlySummer', 'ui-serif', 'Georgia', 'Cambria', 'Times New Roman', 'Times', 'serif'],
-      navbar: ['STIX-Italic', 'EarlySummer-Subset', 'EarlySummer', 'ui-serif', 'Georgia', 'Cambria', 'Times New Roman', 'Times', 'serif'],
-      time: ['Snell-Bold', 'ui-serif', 'Georgia', 'Cambria', 'Times New Roman', 'Times', 'serif'],
-      serif: ['STIX', 'EarlySummer', 'Georgia', 'ui-serif', 'Georgia', 'Cambria', 'Times New Roman', 'Times', 'serif'],
+      title: ['Input-Mono','Snell-Black', 'EarlySummer-Subset', 'EarlySummer', 'ui-serif', 'Georgia', 'Cambria', 'Times New Roman', 'Times', 'serif'],
+      navbar: ['Input-Mono','STIX-Italic', 'EarlySummer-Subset', 'EarlySummer', 'ui-serif', 'Georgia', 'Cambria', 'Times New Roman', 'Times', 'serif'],
+      time: ['Input-Mono','Snell-Bold', 'ui-serif', 'Georgia', 'Cambria', 'Times New Roman', 'Times', 'serif'],
+      serif: ['Input-Mono','STIX', 'EarlySummer', 'Georgia', 'ui-serif', 'Georgia', 'Cambria', 'Times New Roman', 'Times', 'serif'],
     },
   },
   shortcuts: {
@@ -56,4 +69,13 @@ export default defineConfig({
     transformerDirectives(),
     transformerVariantGroup(),
   ],
+  safelist: [
+    'i-mdi-github',
+    'i-mdi-twitter',
+    'i-mdi-email',
+    'i-mdi-linkedin'
+  ],
+  content: {
+    filesystem: ['**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}']
+  }
 })

@@ -121,3 +121,32 @@
 @font-face {font-family:"EarlySummer";src:url("/font/EarlySummer-Split/4c23f34c9cd7a3f010c7ccf89b9ca802.woff2") format("woff2-variations");font-display: swap;font-weight: 400 700;unicode-range:U+4F43,U+4F46,U+4F4D-4F51,U+4F55,U+4F57,U+4F5B-4F5E,U+4F60,U+4F69,U+4F6C,U+4F6F-4F70,U+4F73,U+4F7B,U+4F7E-4F7F,U+4F83-4F84,U+4F88,U+4F8B,U+4F8D,U+4F8F,U+4F9B,U+4F9D,U+4FAE-4FAF,U+4FB5,U+4FBF,U+4FC3-4FC4,U+4FCA,U+4FCE-4FD1,U+4FD7-4FD8,U+4FDA,U+4FDD-4FDF,U+4FE1,U+4FEE-4FEF,U+4FF1,U+4FF3,U+4FF8,U+4FFA;}
 @font-face {font-family:"EarlySummer";src:url("/font/EarlySummer-Split/63f0ea91045ef2c6cbd3c751bf397013.woff2") format("woff2-variations");font-display: swap;font-weight: 400 700;unicode-range:U+4E9F,U+4EA1-4EA2,U+4EA4-4EA6,U+4EA8,U+4EAB-4EAE,U+4EBA,U+4EC0-4EC1,U+4EC3-4EC4,U+4EC7,U+4ECA-4ECB,U+4ECD,U+4ED4-4ED9,U+4EDE-4EDF,U+4EE3-4EE5,U+4EF0,U+4EF2-4EF3,U+4EF6,U+4EFB,U+4EFD,U+4EFF,U+4F01,U+4F09-4F0A,U+4F0D-4F11,U+4F2F-4F30,U+4F34,U+4F36,U+4F38,U+4F3A,U+4F3C-4F3D;}
 @font-face {font-family:"EarlySummer";src:url("/font/EarlySummer-Split/18acd548e12d229f14ba1e07dfb84231.woff2") format("woff2-variations");font-display: swap;font-weight: 400 700;unicode-range:U+3001-3002,U+3008-300B,U+3010-3011,U+4E00-4E01,U+4E03,U+4E08-4E0B,U+4E0D,U+4E10,U+4E14-4E16,U+4E18-4E19,U+4E1E,U+4E2B,U+4E2D,U+4E32,U+4E38-4E39,U+4E3B,U+4E43,U+4E45,U+4E4B,U+4E4D-4E4F,U+4E52-4E53,U+4E56,U+4E58-4E59,U+4E5D-4E5F,U+4E69,U+4E73,U+4E7E,U+4E86,U+4E88,U+4E8B-4E8C,U+4E92,U+4E94-4E95,U+4E9B;}
+/* Input Mono */
+@font-face {
+  font-family: 'Input-Mono';
+  src: url('/font/InputMono/InputMono-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Input-Mono';
+  src: url('/font/InputMono/InputMono-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Input-Mono';
+  src: url('/font/InputMono/InputMono-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Input-Mono';
+  src: url('/font/InputMono/InputMono-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
