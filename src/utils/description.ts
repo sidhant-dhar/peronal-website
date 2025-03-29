@@ -5,30 +5,6 @@ import MarkdownIt from 'markdown-it'
 type ExcerptScene = 'list' | 'meta' | 'og' | 'rss'
 
 const parser = new MarkdownIt()
-const isCJKLang = (lang: string) => ['zh', 'zh-tw', 'ja'].includes(lang)
-
-// Excerpt length in different scenarios
-const EXCERPT_LENGTHS: Record<ExcerptScene, {
-  cjk: number
-  other: number
-}> = {
-  list: {
-    cjk: 120,
-    other: 240,
-  },
-  meta: {
-    cjk: 120,
-    other: 240,
-  },
-  og: {
-    cjk: 70,
-    other: 140,
-  },
-  rss: {
-    cjk: 70,
-    other: 140,
-  },
-}
 
 // Generate an excerpt from Markdown content
 export function generateExcerpt(
@@ -39,9 +15,7 @@ export function generateExcerpt(
   if (!content)
     return ''
 
-  const length = isCJKLang(lang)
-    ? EXCERPT_LENGTHS[scene].cjk
-    : EXCERPT_LENGTHS[scene].other
+  const length = 140
 
   // Remove all HTML tags and decode HTML entities
   const plainText = parser.render(content)
@@ -69,6 +43,5 @@ export function generateDescription(
   if (post.data.description)
     return post.data.description
 
-  const lang = (!post.data.lang || post.data.lang === '') ? defaultLocale : post.data.lang
-  return generateExcerpt(post.body, scene, lang)
+  return generateExcerpt(post.body, scene, post.data.lang)
 }

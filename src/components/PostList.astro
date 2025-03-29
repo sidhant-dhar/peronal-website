@@ -30,15 +30,15 @@ function getPostPath(post: Post) {
 <ul>
   {posts.map(post => (
     <li
-      class="mb-5.5 font-serif"
+      class="mb-5.5"
       lg={isTag ? '' : 'mb-10'}
     >
 
       {/* post title */}
       <h3 class="inline">
         <a
-          class="hover:c-primary"
-          lg={isTag ? '' : 'font-medium text-4.5'}
+          class="hover:c-primary font-title"
+          lg={isTag ? '' : 'font-semibold text-5.5 leading-6.875'}
           href={getPostPath(post)}
           transition:name={`post-${post.data.abbrlink || post.slug}-${lang}`}
           data-disable-transition-on-theme
@@ -74,7 +74,7 @@ function getPostPath(post: Post) {
       {/* desktop post description */}
       {!isTag && (
         <div
-          class="heti hidden"
+          class="heti hidden opacity-50 font-serif"
           lg="mt-2 block"
         >
           <p>{generateDescription(post, 'list')}</p>
