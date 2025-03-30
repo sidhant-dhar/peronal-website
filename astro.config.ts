@@ -39,6 +39,7 @@ export default defineConfig({
   integrations: [
     UnoCSS({
       injectReset: true,
+      inspector: true,
     }),
     mdx(),
     partytown({
