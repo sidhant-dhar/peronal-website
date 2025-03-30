@@ -6,6 +6,7 @@ lang: en
 
 Software Engineer by profession, and a explorer of large systems by passion. Amateur historian and war buff. I love to read, write, and code.
 
+
 Currently deep into undertanding **Poker maths** and trying to make a Go Kart go **faster**.
 
 ## Work
@@ -14,6 +15,7 @@ Currently deep into undertanding **Poker maths** and trying to make a Go Kart go
 **Senior Software Engineer** | *2021-Present*
 
 Helping turn huge amounts of data into actionable insights. Working on lots of cool stuff like sql parsers, data pipelines and data visualisations.
+
 
 ---
 

@@ -7,6 +7,7 @@ import Scrollbar from '@/components/Widgets/Scrollbar.astro'
 import themeConfig from '@/config'
 import Head from '@/layouts/Head.astro'
 import { getPageInfo } from '@/utils/page'
+import { ViewTransitions } from 'astro:transitions'
 import '@/styles/font.css'
 import '@/styles/global.css'
 import '@/styles/heti.css'
@@ -19,7 +20,7 @@ interface Props {
 }
 
 const { postTitle, postDescription, postSlug, supportedLangs = [] } = Astro.props
-const { isPost } = getPageInfo(Astro.url.pathname)
+const { isPost, isAbout } = getPageInfo(Astro.url.pathname)
 const fontStyle = themeConfig.global.fontStyle === 'serif' ? 'font-serif' : 'font-sans'
 const MarginBottom = isPost && themeConfig.comment?.enabled
   ? 'mb-10' // Post page with comment system
@@ -32,6 +33,30 @@ const MarginBottom = isPost && themeConfig.comment?.enabled
   data-overlayscrollbars-initialize
 >
   <Head {postTitle} {postDescription} {postSlug} />
+  <ViewTransitions />
+
+  <style is:global>
+    /* Custom transition animations */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeOut {
+      from { opacity: 1; transform: translateY(0); }
+      to { opacity: 0; transform: translateY(-10px); }
+    }
+
+    /* Apply custom animations to view transitions */
+    ::view-transition-old(header) {
+      animation: fadeOut 350ms cubic-bezier(0.4, 0.0, 0.2, 1) forwards;
+    }
+
+    ::view-transition-new(header) {
+      animation: fadeIn 450ms cubic-bezier(0.4, 0.0, 0.2, 1) forwards;
+    }
+  </style>
+
   <body data-overlayscrollbars-initialize>
 
     <div
@@ -39,7 +64,7 @@ const MarginBottom = isPost && themeConfig.comment?.enabled
       p="x-[min(7.25vw,3.731rem)] y-9"
       lg="p-0 max-w-[min(calc(75vw-16rem),44rem)] mx-[max(5.625rem,calc(50vw-34.375rem))] my-20"
     >
-      <Header />
+      {!isAbout ? <Header /> : <></>}
       <Navbar />
       <main class={MarginBottom}>
         <slot />

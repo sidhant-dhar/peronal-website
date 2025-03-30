@@ -32,6 +32,7 @@ const SubtitleTag = isPost ? 'div' : 'h2'
     isPost ? 'mb-10.8' : 'mb-10.5',
     'lg:(uno-desktop-column top-20)',
   ]}
+  transition:name="header"
 >
   <TitleTag
     class:list={[
@@ -44,7 +45,7 @@ const SubtitleTag = isPost ? 'div' : 'h2'
     <!-- Fix text cropping issues during view transition on iOS by adding a div tag -->
     <div
       class="box-content inline-block pr-1"
-      transition:name={`site-title-${currentLang}`}
+      transition:name="site-title"
       data-disable-transition-on-theme
     >
       <a
