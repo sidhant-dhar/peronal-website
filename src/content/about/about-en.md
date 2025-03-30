@@ -6,7 +6,6 @@ lang: en
 
 Software Engineer by profession, and a explorer of large systems by passion. Amateur historian and war buff. I love to read, write, and code.
 
-
 Currently deep into undertanding **Poker maths** and trying to make a Go Kart go **faster**.
 
 ## Work
@@ -24,7 +23,6 @@ Currently deep into undertanding **Poker maths** and trying to make a Go Kart go
 
 Helping turn huge amounts of data into actionable insights. Working on lots of cool stuff like sql parsers, data pipelines and data visualisations.
 
-
 ---
 
 <div class="flex items-center mt-6">
@@ -34,7 +32,6 @@ Helping turn huge amounts of data into actionable insights. Working on lots of c
     <div class="opacity-75"><strong>Senior Software Engineer</strong> | <em class="font-date">2020-2021</em></div>
   </div>
 </div>
-
 
 Built a platform for white labelled edtech applications. Think Unacademy, but for mom and pop coaching centers.
 

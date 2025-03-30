@@ -37,7 +37,7 @@ function getPostPath(post: Post) {
       {/* post title */}
       <h3 class="inline">
         <a
-          class="hover:c-primary font-title"
+          class="font-title hover:c-primary"
           lg={isTag ? '' : 'font-semibold text-5.5 leading-6.875'}
           href={getPostPath(post)}
           transition:name={`post-${post.data.abbrlink || post.slug}-${lang}`}
@@ -74,7 +74,7 @@ function getPostPath(post: Post) {
       {/* desktop post description */}
       {!isTag && (
         <div
-          class="heti hidden opacity-50 font-serif"
+          class="heti hidden font-serif opacity-50"
           lg="mt-2 block"
         >
           <p>{generateDescription(post, 'list')}</p>

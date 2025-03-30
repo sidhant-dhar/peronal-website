@@ -145,7 +145,7 @@ const { Content, remarkPluginFrontmatter } = await post.render()
       {post.data.tags.map((tag: string) => (
         <a
           href={getTagPath(tag, lang)}
-          class="uno-tags-style font-title"
+          class="font-title uno-tags-style"
         >
           {tag}
         </a>

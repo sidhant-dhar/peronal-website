@@ -8,8 +8,7 @@ const parser = new MarkdownIt()
 // Generate an excerpt from Markdown content
 export function generateExcerpt(
   content: string,
-  scene: ExcerptScene,
-  lang: string,
+  _: ExcerptScene,
 ): string {
   if (!content)
     return ''
@@ -42,5 +41,5 @@ export function generateDescription(
   if (post.data.description)
     return post.data.description
 
-  return generateExcerpt(post.body, scene, post.data.lang)
+  return generateExcerpt(post.body, scene)
 }

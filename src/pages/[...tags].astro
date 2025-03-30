@@ -35,13 +35,13 @@ const allTags = await getAllTags(lang)
 
 <Layout>
   <!-- Decorative Line -->
-  <div class="uno-decorative-line font-title"></div>
+  <div class="font-title uno-decorative-line"></div>
   <!-- Tags List -->
   <div class="uno-tags-wrapper">
     {allTags.map(tag => (
       <a
         href={getTagPath(tag, lang)}
-        class="uno-tags-style font-title"
+        class="font-title uno-tags-style"
       >
         {tag}
       </a>

@@ -30,7 +30,6 @@ const aboutCollection = defineCollection({
   }),
 })
 
-
 export const collections = {
   posts: postsCollection,
   about: aboutCollection,

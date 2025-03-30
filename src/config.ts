@@ -1,6 +1,5 @@
 import type { ThemeConfig } from '@/types'
 
-
 export const themeConfig: ThemeConfig = {
   // SITE INFORMATION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> START
   site: {
@@ -156,7 +155,7 @@ export const themeConfig: ThemeConfig = {
         name: 'LinkedIn',
         url: 'https://www.linkedin.com/in/sidhantdhar/',
         icon: 'i-mdi-linkedin',
-      }
+      },
     ],
     // year of website start
     startYear: 2025,
