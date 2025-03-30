@@ -11,7 +11,7 @@ Currently deep into undertanding **Poker maths** and trying to make a Go Kart go
 ## Work
 
 <div class="flex items-center">
-  <img src="/src/images/sundialso.jpeg" alt="Sundial logo" class="w-10 h-10 rounded-md mr-2" />
+  <img src="/images/sundialso.jpeg" alt="Sundial logo" class="w-10 h-10 rounded-md mr-2" />
   <div>
     <div class="font-title my-0 font-bold text-2xl">Sundial</div>
     <div class="opacity-75"><strong>Senior Software Engineer</strong> | <em class="font-date">2021-Present</em></div>
@@ -26,7 +26,7 @@ Helping turn huge amounts of data into actionable insights. Working on lots of c
 ---
 
 <div class="flex items-center mt-6">
-  <img src="/src/images/ingenium.jpeg" alt="Ingenium logo" class="w-10 h-10 rounded-md mr-2" />
+  <img src="/images/ingenium.jpeg" alt="Ingenium logo" class="w-10 h-10 rounded-md mr-2" />
   <div>
     <div class="font-title my-0 font-bold text-2xl">Ingenium Education</div>
     <div class="opacity-75"><strong>Senior Software Engineer</strong> | <em class="font-date">2020-2021</em></div>
@@ -38,7 +38,7 @@ Built a platform for white labelled edtech applications. Think Unacademy, but fo
 ---
 
 <div class="flex items-center mt-6">
-  <img src="/src/images/medkonnect.png" alt="Medkonnect logo" class="w-10 h-10 rounded-md mr-2" />
+  <img src="/images/medkonnect.png" alt="Medkonnect logo" class="w-10 h-10 rounded-md mr-2" />
   <div>
     <div class="font-title my-0 font-bold text-2xl">MedKonnect</div>
     <div class="opacity-75"><strong>Founder</strong> | <em class="font-date">2020</em></div>
